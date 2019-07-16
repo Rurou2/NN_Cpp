@@ -3,7 +3,7 @@
 #include <vector>
 using namespace std;
 
-template<typename T> T sigmoid(T x) {
+double sigmoid(double x) {
     return 1 / (1 + exp(-x));
 }
 
