@@ -11,10 +11,11 @@ class N {
 public:
     N();
     //activation function
-    template<typename T> vector<T> h(vector<double>&, vector<double>&, vector<double>&);
+    template<typename T> T h(vector<double>&);
 
 private:
-    int signal;
+    int signal; // 0 or 1
+    float weight;
 };
 
 class NN {
@@ -28,6 +29,6 @@ int main() {
     return 0;
 }
 
-N::N() : signal(0) {
+N::N() : signal(0), weight(0) {
 
 }
